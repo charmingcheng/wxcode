@@ -1,0 +1,18 @@
+<view class="container" id="wrap">
+    <view class="news-category">
+        <block wx:for="{{newsCategory}}">
+            <text data-cid="{{item.cid}}" bindtap="newsList" class="{{active[item.cid]}}">{{item.cname}}</text>
+        </block>
+    </view>
+	<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+	bindscrolltolower="updateList" bindscroll="scroll">
+		<view class="news-list">
+			<block wx:for="{{news}}">
+				<navigator url="../news_show/news_show?id={{item.id}}" class="news-list-item">
+					<text>{{item.title}}</text>
+				</navigator>
+			</block>
+		</view>
+		<view wx:if="{{!hasMore}}" class="noData"><text>没有更多内容了</text></view>
+	</scroll-view>
+</view>

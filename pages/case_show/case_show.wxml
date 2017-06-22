@@ -1,0 +1,14 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="container" id="wrap">
+	<view class="product-img">
+        <image mode="widthFix" src="{{case.uploadfiles}}"></image>
+	</view>
+    <view class="product-title">
+       <text>{{case.title}}</text>
+    </view>
+	<view class="product-content">
+        <text class="block content-title">案例展示</text>
+	    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+	</view>
+</view>
+<include src="../footer.wxml"/>

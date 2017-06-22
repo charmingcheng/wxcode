@@ -1,0 +1,90 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper-home">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+        	<image src="{{item.uploadfiles}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="main-wrap">
+ <view class="home-titles">
+<navigator class="title-a" url="../product/product"  open-type="switchTab">产品展示<text>更多>></text></navigator>
+</view>
+    <view class="box-content product-home-list">
+      <block wx:for="{{topProductList}}">
+<view class="listli">
+<navigator url="../product_show/product_show?id={{item.id}}" class="navigator"><image src="{{item.thumbfiles}}"></image></navigator>
+<text>{{item.title}}</text>
+      </view>  
+      </block>
+    </view>
+
+    <view class="home-titles" style="padding-top:0">
+<navigator class="title-a" url="../about/about" open-type="switchTab">关于我们<text>更多>></text></navigator>
+</view>
+    <view class="box-about">
+<template is="wxParse" data="{{wxParseData:about.nodes}}"/>
+ </view>
+
+    <view class="home-titles">
+<navigator class="title-a" url="../case/case">案例展示<text>更多>></text></navigator>
+</view>
+    <view class="box-content product-home-list1">
+      <block wx:for="{{topCaseList}}">
+        <navigator url="../case_show/case_show?id={{item.id}}" class="navigator">
+          <image src="{{item.thumbfiles}}"></image>
+        </navigator>
+      </block>
+    </view>
+
+    <view class="home-titles" style="padding-top:0">
+<navigator class="title-a" url="../news/news" open-type="switchTab">新闻资讯<text>更多>></text></navigator>
+    </view>
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="selected">公司新闻</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">行业新闻</view>
+  </view>
+  <view class="{{selected?'show':'hidden'}}">
+      <view class="news-home box">
+      <view class="news-home-list">
+        <block wx:for="{{topNewsList}}">
+          <view class="news-lists">
+            <image src="{{item.thumbfiles}}"></image>
+            <navigator url="../news_show/news_show?id={{item.id}}" class="navigator">{{item.title}}</navigator>
+        
+            <text>{{item.text}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+  <view class="{{selected1?'show':'hidden'}}">
+      <view class="news-home box">
+      <view class="news-home-list">
+        <block wx:for="{{midNewsList}}">
+          <view class="news-lists">
+            <image src="{{item.thumbfiles}}"></image>
+            <navigator url="../news_show/news_show?id={{item.id}}" class="navigator">{{item.title}}</navigator>
+          
+            <text>{{item.text}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+    <view class="box-content contact-home contact1">
+    <navigator class="title-a1" >联系我们</navigator>
+        <view class="box-contact1">
+      <template is="wxParse" data="{{wxParseData:contact.nodes}}"/>
+    </view>
+    </view>
+
+  </view>
+</view>
+<include src="../footer.wxml"/>

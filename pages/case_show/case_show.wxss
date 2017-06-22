@@ -1,0 +1,19 @@
+.product-img {
+    text-align: center;
+}
+.product-content {
+    padding: 6px;
+}
+.product-title {
+    padding: 6px;
+    line-height: 32px;
+    text-align:center;
+}
+.product-content {
+    border-top: 8px solid #eee;
+}
+.content-title {
+    border-bottom: 1px solid #ddd;
+    padding: 6px 2px;
+    margin-bottom: 10px;
+}

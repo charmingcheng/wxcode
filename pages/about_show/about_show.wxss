@@ -1,0 +1,23 @@
+.page-cate-list {
+    border-bottom:1px solid #ddd;
+    height: 40px;
+}
+.page-category {
+    display: flex;
+    flex-wrap:nowrap;
+    padding: 9px 5px;
+}
+.page-category text {
+    margin: 0 5px;
+    padding: 0 5px;
+    color: #333;
+    white-space:nowrap;
+    display: block;
+}
+.page-content {
+    border-top:8px solid #eee;
+    padding: 6px;
+}
+.page-category .active {
+    color: #00a0e9;
+}

@@ -1,0 +1,15 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="container" id="wrap">
+    <scroll-view scroll-x="true" class="page-cate-list" scroll-left="{{scrollLeftpx}}">
+        <view class="page-category">
+            <block wx:for="{{pageCate}}">
+                <text data-id="{{item.id}}" bindtap="updatePageContent" class="{{active[item.id]}}">{{item.title}}</text>
+            </block>
+        </view>
+    </scroll-view>
+    <view class="page-content">
+        <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view>
+</view>
+
+<include src="../footer.wxml"/>

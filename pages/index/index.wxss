@@ -1,0 +1,377 @@
+/**index.wxss**/
+@import "../../style/weui.wxss";
+.swiper-home {
+	border-bottom: 10px solid #eee;
+}
+swiper{
+	height:400rpx;
+}
+.slide-image{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.main-wrap {
+	padding: 10px;
+}
+.box-content {
+	padding: 10px 0;
+}
+.title-text {
+	display: block;
+	font-weight: bold;
+	color: #1aad19;
+	line-height: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.honor image{
+	width:108px;
+	margin:5px;
+	height:80px;
+	}
+.link-home-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 6px 0;
+}
+.link-home-list .list-a {
+	width: 24%;
+}
+.link-home-list .list-a navigator {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	text-align:center;
+	background: #00a0e9;
+	margin: 4px 5px;
+	line-height: 30px;
+	border-radius: 3px;
+}
+
+
+
+
+.title-a1{
+	color:#fff;
+	background:#0099ff;
+	padding:0 20px;
+	font:400 14px/46px "Microsoft YaHei";
+	display: block;
+	text-align:left;
+	border-bottom:1px solid #fff;
+	margin-bottom:10px;
+}
+.product-home-list {
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-home-list .listli{
+	width: 47%;
+	padding:0 1.5%;
+	margin-bottom:15px;
+}
+
+.product-home-list .listli navigator{
+	border:1px solid #c9c9c9;
+}
+
+.product-home-list image {
+	width: 100%;
+	height: 130px;
+
+}
+.product-home-list text { 
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	background:#0099ff;
+	color:#fff;
+	font:400 14px/38px "Microsoft YaHei";
+	margin-top:6px;
+}
+
+
+.product-home-list1 {
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.product-home-list1 navigator{
+	width: 30%;
+	padding:0 5px;
+	margin-bottom:15px;
+}
+
+.product-home-list1 image {
+	width: 100%;
+	height: 120px;
+
+}
+
+
+.box-about{
+	color:#403c3c;
+	font:400 14px/24px "Microsoft YaHei";
+	margin-top:10px;
+}
+
+.box-about image{
+	width:100%;
+	height:180px;
+}
+.home-titles {
+	text-align: center;
+	font-family: "Arial";
+	font-size: 20px;
+	padding: 10px 0 4px;
+}
+.home-titles .title-a {
+	position:relative;
+	color:#fff;
+	background:#0099ff;
+	padding:0 10px;
+	font:400 14px/46px "Microsoft YaHei";
+	display: block;
+	text-align:left;
+}
+
+.home-titles .title-a text{
+	position:absolute;
+	right:10px;
+	top:0;
+	font:400 14px/46px "Microsoft YaHei";
+	color:#fff;
+}
+
+.home-titles .title-txt {
+	display: block;
+}
+.business-home-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 6px;
+}
+.business-home-list navigator {
+	width: 49.5%;
+	display: block;
+}
+.business-home-list image {
+	width: 100%;
+	height: 160px;
+}
+.business-home-list {
+	padding-top: 15px;
+}
+.business-home-list text {
+	line-height: 50px;
+	font-size: 14px;
+	font-family: 'Microsoft YaHei';
+	text-align: center;
+	display: block;
+}
+.news-home {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:20px;
+}
+.news-home-img {
+	width: 50%;
+}
+.news-home-img image {
+	width: 100% !important;
+	height: 165px !important;
+}
+.news-home-list {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.news-lists {
+	width: 47%;
+	padding: 3px 5px;
+}
+
+.news-lists image{
+	width: 100%;
+	height:100px;
+} 
+.news-lists navigator {
+	line-height: 25px;
+	height: 25px;
+	overflow: hidden;
+	font-size:12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	color: #0099ff;
+	font-family: 'Microsoft YaHei';
+}
+.news-lists text {
+	line-height: 22px;
+	height: 22px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	color: #888;
+}
+
+.home-center-img {
+	padding: 20px 0;
+}
+
+.contact-us {
+	height: 70px;
+	border: 1px solid #6d7b89;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+	overflow: visible;
+}
+.contact-title {
+	line-height: 70px;
+	color: #4e5f70;
+	font-size: 22px;
+}
+.contact-p {
+	position: absolute;
+	width: 86%;
+	left: 50%;
+	margin-left: -44%;
+	bottom: -14px;
+	font-size: 12px;
+	background: #fff;
+	z-index: 99;
+	height: 22px;
+}
+
+.contact-p .txt-a {
+	background: #0186d5;
+	color: #fff;
+	padding: 4px 6px;
+	margin-right: 10px;
+	border-radius: 4px;
+}
+
+.contact-home {
+	line-height: 26px;
+	font-size: 13px;
+	text-align: center;
+}
+
+
+.contact1{
+	background:#0099ff;
+	text-align:left;
+	color:#fff;
+	font:400 12px/37px "Microsoft YaHei";
+
+	
+}
+
+.box-contact1{
+	padding-left:20px;
+}
+
+.box-contact1 image{
+	padding-right:5px;
+	background:none;
+}
+
+
+
+
+.news-home {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:20px;
+}
+.news-home-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+.news-lists {
+	width: 43%;
+	margin:0 1.8%;
+}
+.news-lists image{
+	width: 100%;
+	height: 128px;
+}
+.news-lists navigator {
+	line-height: 30px;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 14px;
+	display: block;
+	color: #0099ff;
+	font-family: "微软雅黑";
+}
+.news-lists text {
+	line-height: 22px;
+	font-size: 12px;
+	display: block;
+	color: #666;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.news-lists text.date{
+	font-size: 12px;
+	color:#999;
+	margin-bottom: 10px;
+}
+
+.home-center-img {
+	padding: 20px 0;
+}
+
+
+.nav{
+	width:100%;
+	height:40px;
+	display:flex;
+	flex-direction:row;
+	margin-top:12px;
+}
+.default{
+	line-height:40px;
+    text-align:center;
+	color:#fff;
+	flex: 1;
+	font-size:16px;
+	background: #909090;
+	width: 168px;
+	margin:0 5%;
+	border-radius: 10px;
+	font-family: "微软雅黑";
+}
+.red{
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	flex: 1;
+	font-size:16px;
+	background: #0099ff;
+	width: 168px;
+	margin:0 5%;
+	border-radius: 10px;
+	font-family: "微软雅黑";
+}
+.show{
+	display:block;
+}
+.hidden{
+	display:none;
+}

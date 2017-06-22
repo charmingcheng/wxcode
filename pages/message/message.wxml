@@ -1,0 +1,19 @@
+<view class="container" id="wrap">
+    <view class="user-tip">
+        {{userInfo}}
+    </view>
+    <form bindsubmit="formSubmit" bindreset="formReset" id="message">
+        <view class="section">
+            <input name="content" class="input" placeholder="公司名称" />
+        </view>
+        <view class="section">
+            <input name="name" class="input" placeholder="联系人" />
+        </view>
+        <view class="section">
+            <input name="contact" class="input" placeholder="联系电话" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit" type="primary">提交留言</button>
+        </view>
+    </form>
+</view>

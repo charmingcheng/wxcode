@@ -1,0 +1,24 @@
+#message {
+    padding: 8px;
+    padding-top: 30px;
+}
+#message .input {
+    border: 1px solid #ccc;
+}
+#message .section {
+    margin-bottom: 20px;
+}
+/*#message .section-title {
+    padding: 5px 0;
+}*/
+.input {
+    height: 34px;
+    padding: 4px 8px;
+    color: #555;
+}
+.btn-area {
+    margin-top: 5px;
+}
+button[type="primary"] {
+    background-color:#00a0e9;
+}

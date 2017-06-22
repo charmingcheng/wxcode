@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/product/product",
+    "pages/news/news",
+    "pages/case/case",
+    "pages/product_show/product_show",
+    "pages/news_show/news_show",
+    "pages/case_show/case_show",
+    "pages/about/about",
+    "pages/about_show/about_show",
+    "pages/message/message"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#00a0e9",
+    "navigationBarTitleText": "温岭德诺机电设备有限公司小程序",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#00a0e9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home_h.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/product/product",
+      "iconPath": "image/list.png",
+      "selectedIconPath": "image/list_h.png",
+      "text": "产品"
+    },{
+      "pagePath": "pages/news/news",
+      "iconPath": "image/news.png",
+      "selectedIconPath": "image/news_h.png",
+      "text": "新闻"
+    },{
+      "pagePath": "pages/about/about",
+      "iconPath": "image/about.png",
+      "selectedIconPath": "image/about_h.png",
+      "text": "公司"
+    },{
+      "pagePath": "pages/message/message",
+      "iconPath": "image/message.png",
+      "selectedIconPath": "image/message_h.png",
+      "text": "留言"
+    }]
+  }
+}

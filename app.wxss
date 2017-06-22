@@ -1,0 +1,38 @@
+/**app.wxss**/
+@import "/wxParse/wxParse.wxss";
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	justify-content: space-between;
+	padding: 0;
+	box-sizing: border-box;
+} 
+.block {
+	display: block;
+}
+.noData {
+	color: #ddd;
+	text-align: center;
+	margin-bottom: 15px;
+	padding-top: 15px;
+}
+.footer {
+	background: #eee;
+	color: #ccc;
+	text-align: center;
+	line-height: 48px;
+}
+
+scroll-view text{
+	padding-right:10px;
+	color:#333;
+	font:400 14px/30px "微软雅黑"
+}
+
+view text{
+	padding-right:10px;
+	color:#333;
+	font:400 14px/30px "微软雅黑"
+}

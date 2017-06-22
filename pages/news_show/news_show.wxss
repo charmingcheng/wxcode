@@ -1,0 +1,18 @@
+#wrap {
+	padding: 0 6px;
+}
+.news-title {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 3px 0;
+}
+.news-date {
+	color: #aaa;
+}
+.news-show-top {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 6px;
+}
+.news-show {
+	padding-top: 10px;
+}

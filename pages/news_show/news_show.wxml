@@ -1,0 +1,11 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="container" id="wrap">
+	<view class="news-show-top">
+		<text class="news-title block">{{show.title}}</text>
+		<text class="news-date block">{{show.date}}</text>
+	</view>
+	<view class="news-show">
+		<template is="wxParse" data="{{wxParseData:newsShow.nodes}}"/>
+	</view>
+</view>
+<include src="../footer.wxml"/>

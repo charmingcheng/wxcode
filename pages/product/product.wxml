@@ -1,0 +1,24 @@
+
+<view class="container" id="wrap">
+	<scroll-view scroll-x="true" class="page-cate-list">
+        <view class="product-category">
+            <block wx:for="{{productsCategory}}">
+                <text data-cid="{{item.cid}}" bindtap="productsList" class="{{active[item.cid]}}">{{item.cname}}</text>
+            </block>
+        </view>
+    </scroll-view>
+	<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+	bindscrolltolower="updateList" bindscroll="scroll">
+		<view class="product-list">
+			<block wx:for="{{products}}">
+				<view wx:if="{{item.id}}">
+					<navigator url="../product_show/product_show?id={{item.id}}" class="product-list-item">
+						<image src="{{item.thumbfiles}}"></image>
+						<text>{{item.title}}</text>
+					</navigator>
+				</view>
+			</block>
+		</view>
+		<view wx:if="{{!hasMore}}" class="noData"><text>没有更多内容了</text></view>
+	</scroll-view>
+</view>
